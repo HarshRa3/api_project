@@ -14,8 +14,8 @@ export const GET = async (request) => {
 };
 export const POST = async (request) => {
   try {
-    const { title, content, userId } = await request.json();
-    await Tasks.create({ title, content, userId:userId._id });
+    const { title, content, userId ,status} = await request.json();
+    await Tasks.create({ title, content, userId,status});
     return ResponseMessage("Task been created successfully",null,true,200);
   } catch (error) {
     return ResponseMessage( `error is ${error}`,null,false,500);

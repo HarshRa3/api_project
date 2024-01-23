@@ -20,8 +20,9 @@ const taskSchema= new mongoose.Schema({
         require:true
     },
     userId:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"Users",
+        // type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.ObjectId,
+        require:true
      
     }
 })

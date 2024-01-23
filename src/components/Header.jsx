@@ -147,7 +147,7 @@ export default function MiniDrawer({ childrens }) {
           <Tabs
             value={value}
             onChange={handleChange}
-            textColor="white"
+            textColor='inherit'
             indicatorColor="secondary"
             aria-label="secondary tabs example"
             sx={{ display: { xs: "none", lg: "flex" } }}
@@ -158,7 +158,9 @@ export default function MiniDrawer({ childrens }) {
           </Tabs>
           <Stack direction={"row"} spacing={2}>
             <Button variant="contained">Sign In</Button>
+            <Link href={'/signUp'}>
             <Button variant="contained">Sign Up</Button>
+            </Link>
           </Stack>
         </Toolbar>
       </AppBar>
