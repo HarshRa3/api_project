@@ -157,7 +157,10 @@ export default function MiniDrawer({ childrens }) {
             ))}
           </Tabs>
           <Stack direction={"row"} spacing={2}>
+          <Link href={'/login'}>
             <Button variant="contained">Sign In</Button>
+          </Link>
+            
             <Link href={'/signUp'}>
             <Button variant="contained">Sign Up</Button>
             </Link>
